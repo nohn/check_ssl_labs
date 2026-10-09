@@ -116,7 +116,7 @@ define service {
     service_description     SSL Labs Grade
     check_command           check_ssllabs!admin@yourdomain.com!B!C
     check_interval          1440        ; Check once per day (1440 minutes)
-    retry_interval          360         ; Retry after 6 minutes for live scans. Setting this lower will get you false alarms and may get you rate limited.
+    retry_interval          6           ; Retry after 6 minutes for live scans. Setting this lower will get you false alarms and may get you rate limited.
 }
 
 ```
